@@ -1,4 +1,4 @@
-print("hello")
+#print("hello")
 
 # shopping_cart.py
 
@@ -27,11 +27,26 @@ products = [
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 
-print(products)
-# pprint(products)
 
-# TODO: write some Python code here to produce the desired output
-print(products)
+#INFO CAPTURE
+
+
+selected_id = input("Please input a product indentifier: ")  
+print(selected_id)
+print(type(selected_id))
+
+
+
+
+
+#INFO DISPLAY/OUTPUT
+
+
+
+
+
+
+
 
 
 #A grocery store name of your choice
