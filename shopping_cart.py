@@ -60,16 +60,23 @@ for selected_id in selected_ids:
     total_price = total_price + matching_product["price"]
     print("SELECTED PRODUCT: " + matching_product["name"] + " $" + str(matching_product["price"]))
 
-print("TOTAL PRICE: $" + str(total_price))  #format as USD
+print("-------------------")
+total_price = ("TOTAL PRICE: $" + str(total_price))  #format as USD
+print(total_price)
+tax_owed = 1
+print("TAX OWED: $" + str(tax_owed))
+
+print("TOTAL AMOUNT OWED :$" + str(total_price) + str(tax_owed))
+print("-------------------")
 
 #print(selected_ids)
 
-
+print("THANKS FOR SHOPPING WITH US, COME AGAIN!")
 
 
 #The amount of tax owed (e.g. $0.39), calculated by multiplying the total cost by a New York City sales tax rate of 8.75% (for the purposes of this project, groceries are not exempt from sales tax)
 #The total amount owed, formatted as US dollars and cents (e.g. $4.89), calculated by adding together the amount of tax owed plus the total cost of all shopping cart items
-#A friendly message thanking the customer and/or encouraging the customer to shop again
+
 
 
 
