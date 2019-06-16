@@ -29,6 +29,7 @@ products = [
 #INFO CAPTURE
 
 total_price = 0
+selected_ids = []
 
 while True:
     selected_id = input("Please input a product indentifier: ")  # number shows as string in screen cast but mine is showing as int, why?
@@ -36,16 +37,31 @@ while True:
     if selected_id == DONE:
         break
     else:
-        matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
-        matching_product = matching_products[0]
-        total_price = total_price + matching_product["price"]
-        print("SELECTED PRODUCT: " + matching_product["name"] + " " + str(matching_product["price"]))
+        #matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
+        #matching_product = matching_products[0]
+        #total_price = total_price + matching_product["price"]
+        #print("SELECTED PRODUCT: " + matching_product["name"] + " " + str(matching_product["price"]))
+        selected_ids.append(selected_id)
 
 #INFO DISPLAY/OUTPUT
+print("--------------------")
+print("MARI'S GROCERY STORE")
+print("--------------------")
+print("www.marisgrocerystore.com")
+print("Phone: (1) 781-718-5136")
+import datetime
+currentDT = datetime.datetime.now()
+print("Check out Time: " + str(currentDT))
+
+for selected_id in selected_ids:
+    matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
+    matching_product = matching_products[0]
+    total_price = total_price + matching_product["price"]
+    print("SELECTED PRODUCT: " + matching_product["name"] + " " + str(matching_product["price"]))
 
 print("TOTAL PRICE: " + str(total_price))  #format as USD
 
-
+#print(selected_ids)
 
 
 
