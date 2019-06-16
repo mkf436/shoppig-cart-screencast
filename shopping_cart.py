@@ -27,10 +27,17 @@ products = [
 ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 
 #INFO CAPTURE
-selected_id = input("Please input a product indentifier: ")  # number shows as string in screen cast but mine is showing as int, why?
-matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
-matching_product = matching_products[0]
-print("SELECTED PRODUCT: " + matching_product["name"] + " " + str(matching_product["price"]))
+
+while True:
+    selected_id = input("Please input a product indentifier: ")  # number shows as string in screen cast but mine is showing as int, why?
+    DONE = "DONE"
+    if selected_id == DONE:
+        break
+    else:
+        matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
+        matching_product = matching_products[0]
+        print("SELECTED PRODUCT: " + matching_product["name"] + " " + str(matching_product["price"]))
+
 
 
 
