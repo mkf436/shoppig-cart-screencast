@@ -49,9 +49,11 @@ print("MARI'S GROCERY STORE")
 print("--------------------")
 print("www.marisgrocerystore.com")
 print("Phone: (1) 781-718-5136")
+
+
 import datetime
 currentDT = datetime.datetime.now()
-print("Check out Time: " + str(currentDT))
+print("Check out Time: " + str(currentDT.strftime("%Y-%m-%d %H:%M:%S")))
 print("--------------------")
 
 for selected_id in selected_ids:
