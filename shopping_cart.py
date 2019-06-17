@@ -61,12 +61,15 @@ for selected_id in selected_ids:
     print("SELECTED PRODUCT: " + matching_product["name"] + " $" + str(matching_product["price"]))
 
 print("-------------------")
-total_price = ("TOTAL PRICE: $" + str(total_price))  #format as USD
-print(total_price)
-tax_owed = 1
+new_total_price = ("TOTAL PRICE: $" + str(total_price))  
+print(new_total_price)
+tax_owed = round((total_price * .0875),2)
+#def add(tax_owed, total_price)
+ #   return tax_owed + total_price
 print("TAX OWED: $" + str(tax_owed))
 
-print("TOTAL AMOUNT OWED :$" + str(total_price) + str(tax_owed))
+
+print("GRAND TOTAL: $" + total_price + tax_owed)
 print("-------------------")
 
 #print(selected_ids)
