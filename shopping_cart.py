@@ -68,16 +68,14 @@ tax_owed = round((total_price * .0875),2)
  #   return tax_owed + total_price
 print("TAX OWED: $" + str(tax_owed))
 
-
-print("GRAND TOTAL: $" + total_price + tax_owed)
+c = total_price + tax_owed
+print("GRAND TOTAL: $" + str(c))
 print("-------------------")
 
 #print(selected_ids)
 
 print("THANKS FOR SHOPPING WITH US, COME AGAIN!")
 
-
-#The amount of tax owed (e.g. $0.39), calculated by multiplying the total cost by a New York City sales tax rate of 8.75% (for the purposes of this project, groceries are not exempt from sales tax)
 #The total amount owed, formatted as US dollars and cents (e.g. $4.89), calculated by adding together the amount of tax owed plus the total cost of all shopping cart items
 
 
