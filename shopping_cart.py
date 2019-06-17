@@ -78,8 +78,7 @@ print("-------------------")
 
 print("THANKS FOR SHOPPING WITH US, COME AGAIN!")
 
-#The total amount owed, formatted as US dollars and cents (e.g. $4.89), calculated by adding together the amount of tax owed plus the total cost of all shopping cart items
-
+#test
 
 
 
